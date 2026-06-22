@@ -22,6 +22,33 @@ html {
   scroll-behavior: smooth;
 }
 
+.brand-logo {
+  width: 78px;
+  height: 78px;
+  object-fit: contain;
+  display: block;
+}
+
+.hero-logo {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.logo-preview {
+  min-height: 210px;
+  background: #95bcf6;
+  border-radius: 26px;
+  padding: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
 body {
   font-family: "Inter", Arial, sans-serif;
   background: #ffffff;
@@ -342,7 +369,7 @@ a {
 
 .card-two {
   left: 500px;
-  bottom: 5px;
+  bottom: -130px;
   width: 150px;
 }
 
