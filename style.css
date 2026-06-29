@@ -51,7 +51,7 @@ html {
 
 body {
   font-family: "Inter", Arial, sans-serif;
-  background: #ffffff;
+ background : #ffffff;
   color: var(--text);
   line-height: 1.6;
 }
@@ -528,62 +528,18 @@ a {
 .image-block {
   min-height: 560px;
   border-radius: 36px;
-  background:
-    linear-gradient(
-      rgba(7, 25, 47, 0.18),
-      rgba(7, 25, 47, 0.45)
-    ),
-    linear-gradient(135deg, #e0f7ff, #3bbff0 46%, #07264a);
   position: relative;
-  box-shadow: var(--shadow);
   overflow: hidden;
+  box-shadow: var(--shadow);
+
+  background-image: url("images/body\ img.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.image-block::before,
-.image-block::after {
-  content: "";
-  position: absolute;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.28);
-}
 
-.image-block::before {
-  width: 220px;
-  height: 220px;
-  top: 70px;
-  left: 60px;
-}
 
-.image-block::after {
-  width: 320px;
-  height: 320px;
-  right: -80px;
-  bottom: -70px;
-}
-
-.image-overlay {
-  position: absolute;
-  left: 28px;
-  right: 28px;
-  bottom: 28px;
-  background: rgba(255, 255, 255, 0.92);
-  border-radius: 24px;
-  padding: 22px;
-  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.15);
-}
-
-.image-overlay strong,
-.image-overlay span {
-  display: block;
-}
-
-.image-overlay strong {
-  font-size: 22px;
-}
-
-.image-overlay span {
-  color: var(--muted);
-}
 
 .split-content p {
   margin-top: 20px;
@@ -1583,12 +1539,6 @@ textarea {
     border-radius: 26px;
   }
 
-  .image-overlay {
-    left: 16px;
-    right: 16px;
-    bottom: 16px;
-    padding: 18px;
-  }
 
   .feature-list div {
     grid-template-columns: 46px 1fr;
@@ -1693,6 +1643,11 @@ textarea {
   .stat-image-hand {
     width: 62px;
     height: 62px;
+  }
+
+  .image-block {
+    min-height: 360px;
+    background-position: center;
   }
 }
 
