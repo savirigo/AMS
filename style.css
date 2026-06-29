@@ -790,6 +790,12 @@ textarea:focus {
   text-align: center;
 }
 
+.quote-form button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+}
+
 
 /* PROFESSIONAL FOOTER */
 
