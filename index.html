@@ -288,31 +288,87 @@
           </div>
         </div>
 
-        <form class="quote-form" id="quoteForm">
-          <h3>Request a Free Quote</h3>
-          <p>Fill this in and your email app will open with the enquiry ready to send.</p>
+        <form
+  class="quote-form"
+  id="quoteForm"
+  action="https://formspree.io/f/mbdvkjbj"
+  method="POST"
+>
+  <h3>Request a Free Quote</h3>
 
-          <div class="form-row">
-            <input type="text" id="name" placeholder="Your name" required>
-            <input type="tel" id="phone" placeholder="Phone number" required>
-          </div>
+  <p>
+    Fill in your details and our team will contact you shortly.
+  </p>
 
-          <input type="email" id="email" placeholder="Email address" required>
-          <input type="text" id="company" placeholder="Company / site name">
-          <select id="service">
-            <option value="">Select service type</option>
-            <option>Commercial Office Cleaning</option>
-            <option>Furniture Moving</option>
-            <option>Common Area Cleaning</option>
-            <option>Window / Glass Cleaning</option>
-            <option>Builders Cleaning</option>
-            <option>Maintenance Support</option>
-          </select>
-          <textarea id="message" placeholder="Tell us about the job"></textarea>
+  <div class="form-row">
+    <input
+      type="text"
+      name="name"
+      placeholder="Your name"
+      required
+    >
 
-          <button type="submit">Send Enquiry</button>
-          <div class="form-message" id="formMessage">Thank you. Your email app should open now.</div>
-        </form>
+    <input
+      type="tel"
+      name="phone"
+      placeholder="Phone number"
+      required
+    >
+  </div>
+
+  <input
+    type="email"
+    name="email"
+    placeholder="Email address"
+    required
+  >
+
+  <input
+    type="text"
+    name="company"
+    placeholder="Company / site name"
+  >
+
+  <select name="service" required>
+    <option value="" disabled selected>Select service type</option>
+    <option value="Commercial Office Cleaning">
+      Commercial Office Cleaning
+    </option>
+    <option value="Furniture Moving">
+      Furniture Moving
+    </option>
+    <option value="Common Area Cleaning">
+      Common Area Cleaning
+    </option>
+    <option value="Glass and Window Cleaning">
+      Glass and Window Cleaning
+    </option>
+    <option value="Builders Cleaning">
+      Builders Cleaning
+    </option>
+    <option value="Maintenance Support">
+      Maintenance Support
+    </option>
+  </select>
+
+  <textarea
+    name="message"
+    placeholder="Tell us about the job"
+    required
+  ></textarea>
+
+  <input
+    type="hidden"
+    name="_subject"
+    value="New AMS Website Quote Request"
+  >
+
+  <button type="submit">
+    Send Enquiry
+  </button>
+
+  <div class="form-message" id="formMessage"></div>
+</form>
       </div>
     </section>
   </main>
